@@ -1,6 +1,6 @@
 // OPEN WEATHER API CALL REFERENCE 
 
-// API KEY: c11639f11059953c1817728af454e744
+// API KEY:
 
 // https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}
 
