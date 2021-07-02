@@ -9,9 +9,6 @@ fetch("https://ipinfo.io/json?token=5607825501f064").then(
     console.log(userLoc);
 })
 
-
-
-
 // DOM Nodes...
 var currentCityNameDisplay = $("#cityNameDisplay")
 var currentCityTemp = $("#temp")
