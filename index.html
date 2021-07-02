@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header class="uk-background-default">
+      <h1
+        class="
+          uk-heading-large uk-heading-divider uk-align-center uk-text-center
+        "
+      >
+        Weather Dashboard
+      </h1>
+    </header>
+    <div id="alert" uk-alert class="uk-text-center">
+      Search for a city!<a class="uk-alert-close" uk-close></a>
+    </div>
+    <main class="uk-flex uk-background-default">
+      <!-- Search and Search History -->
+      <div
+        id="searchBox"
+        class="uk-section"
+        uk-scrollspy="target: ; cls: uk-animation-slide-bottom; delay: 3200"
+      >
+        <div class="uk-margin">
+          <form class="uk-search uk-search-default">
+            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+            <input class="uk-search-input" type="search" placeholder="Search" />
+          </form>
+        </div>
+        <button
+          id="btn-search-history"
+          class="uk-button uk-button-default"
+          type="button"
+          uk-toggle="target: #offcanvas-overlay"
+        >
+          history
+        </button>
+
+        <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+          <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <h3 id="search-history-h3">Search History</h3>
+                <ul id="search-history-ul">
+                    <li>Seattle</li>
+                    <li>Cabo San Lucas</li>
+                    <li>Seronna</li>
+                    <li>Los Angeles</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Weather Specifics and 5-Day forecast -->
+      <div
+        id="currentDisplay"
+        class="uk-section uk-width-expand"
+        uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 350"
+      >
+        <div id="city-focused" class="uk-article">
+          <h1 class="uk-article-title">Seattle, WA</h1>
+          <p class="uk-article-meta">Temp:<span id="temp"></span></p>
+          <p class="uk-article-meta">Wind:<span id="wind"></span></p>
+          <p class="uk-article-meta">Humidity:<span id="humidity"></span></p>
+          <p class="uk-article-meta">UV Index:<span id="uv"></span></p>
+        </div>
+
+        <div
+          id="day-card"
+          class="uk-child-width-auto uk-text-center uk-flex"
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
+          uk-grid
+          >
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
+                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
+                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
+                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
+                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
+                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/script.js"></script>
+</html>
