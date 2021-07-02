@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Weather Dashboard</title>
   </head>
-  <body>
+  <body id="mobile-media-query">
     <header class="uk-background-default">
       <h1
         class="
@@ -25,7 +25,7 @@
     <div id="alert" uk-alert class="uk-text-center">
       Search for a city!<a class="uk-alert-close" uk-close></a>
     </div>
-    <main class="uk-flex uk-background-default">
+    <main id="mobile-media-query" class="uk-flex">
       <!-- Search and Search History -->
       <div
         id="searchBox"
@@ -34,8 +34,8 @@
       >
         <div class="uk-margin">
           <form class="uk-search uk-search-default">
-            <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-            <input class="uk-search-input" type="search" placeholder="Search" />
+            <a id="btn" href="" class="uk-search-icon-flip" uk-search-icon></a>
+            <input id="searchInput" class="uk-search-input" type="search" placeholder="Search" />
           </form>
         </div>
         <button

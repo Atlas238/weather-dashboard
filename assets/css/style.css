@@ -52,3 +52,16 @@ header h1 {
 #btn-search-history {
     margin-left: 25%;
 }
+
+@media screen and (max-width: 450px) {
+
+#mobile-media-query {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchBox input {
+    margin-left:25px;
+}
+
+}
