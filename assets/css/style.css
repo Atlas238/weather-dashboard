@@ -3,9 +3,9 @@ header h1 {
     padding-bottom: 0;
 }
 
-img {
+/* img {
     visibility: visible !important;
-}
+} */
 
 #searchBox {
     margin-left: 1em;
@@ -58,24 +58,41 @@ img {
     margin-left: 25%;
 }
 
+#weatherIconAdjust {
+    display:none;
+}
+
 @media screen and (max-width:2500px) {
+    
     #weatherIcon {
         margin-right:0 !important;
     }
+
     
-   
+    
 }
 
 @media screen and (max-width: 780px) {
-html {
-    width:100vw;
-}
-    #weatherIcon {
-        min-width:fit-content;
-    }
 
-    #weatherIcon::before {
-        content: "<br>";
+#weatherIconAdjust {
+    display:inherit
+}
+html {
+    width:100vw !important;
+}
+
+header {
+    text-align: center !important;
+}
+
+#imgDiv {
+    display:none;
+}
+
+#weatherIcon {
+        min-width:fit-content;
+        display: inherit;
+        flex-direction: column;
     }
 
 #mobile-media-query {

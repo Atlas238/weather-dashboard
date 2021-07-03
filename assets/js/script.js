@@ -1,3 +1,8 @@
+// Media query for Icon movement
+navigator.geolocation.getCurrentPosition(position => {
+    console.log(position.coords)
+})
+
 // DOM Nodes...
 var currentCityNameDisplay = $("#cityNameDisplay");
 var currentCityTemp = $("#temp");
@@ -5,6 +10,7 @@ var currentCityWind = $("#wind");
 var currentCityHumidity = $("#humidity");
 var currentCityUV = $("#uv");
 var currentCityWeatherIcon = $("#weatherIcon");
+var weatherIconAdjustHolder = $("#weatherIconAdjust");
 
 // Grabbing visitor IP address...
 
@@ -28,18 +34,28 @@ function getUserIP() {
       )
         .then((response) => response.json())
         .then((responseData) => {
+          // Take response data for Current City (From IP location) and fill placeholder elements with corresponding data
+          // First block handles main display
           console.log(responseData);
           currentCityTemp.text(responseData.current.temp);
           currentCityWind.text(responseData.current.wind_speed);
           currentCityHumidity.text(responseData.current.humidity);
           currentCityUV.text(responseData.current.uvi);
-          console.log(responseData.current.weather[0].icon);
           currentCityWeatherIcon.attr(
             "src",
             "http://openweathermap.org/img/wn/" +
               responseData.current.weather[0].icon +
               "@4x.png"
           );
+          weatherIconAdjustHolder.attr(
+            "src",
+            "http://openweathermap.org/img/wn/" +
+              responseData.current.weather[0].icon +
+              "@4x.png"
+          );
+
+          // Daily forecast Tiles
+
         });
     });
 }
