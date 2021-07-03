@@ -29,7 +29,7 @@
       <!-- Search and Search History -->
       <div
         id="searchBox"
-        class="uk-section"
+        class="uk-section "
         uk-scrollspy="target: ; cls: uk-animation-slide-bottom; delay: 3200"
       >
         <div class="uk-margin">
@@ -73,21 +73,22 @@
       <div id="city-focused" class=" uk-width-1-2 uk-flex uk-flex-center">
           <div class="uk-flex uk-flex-column">
           <h1 id="cityNameDisplay" class="uk-article-title"></h1>
-          <img class="uk-align-center uk-margin-top uk-padding-top" id = "weatherIconAdjust" src=""/>
+          <p class="uk-article-meta uk-text-large"> <span id="currentDate"></span></p>
+          <img class="uk-align-center uk-margin-top uk-padding-top" id = "weatherIconAdjust" src="" alt="weather icon"/>
           <p class="uk-article-meta uk-text-large">Temp: <span id="temp"></span> Fareinheit</p>
           <p class="uk-article-meta uk-text-large">Wind: <span id="wind"></span> mph</p>
           <p class="uk-article-meta uk-text-large">Humidity: <span id="humidity"></span></p>
           <p class="uk-article-meta uk-text-large">UV Index: <span id="uv"></span></p>
         </div>
           <div id="imgDiv" class="uk-width-expand uk-flex-center">
-              <img class="uk-align-center uk-margin-top uk-padding-top" id = "weatherIcon" src=""/> 
+              <img class="uk-align-center uk-margin-top uk-padding-top" id = "weatherIcon" src="" alt="weather icon"/> 
           </div>
         </div>
     </div>
 </main>
     <!-- Cards for Daily Forcast -->
 
-    <div class="uk-flex uk-flex-center">
+    <div class="uk-flex uk-flex-center uk-margin-bottom">
     <div
           id="day-card"
           class="uk-child-width-auto uk-text-center"
@@ -97,13 +98,14 @@
 
           <div>
             <div id="other" class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
+                <div class="uk-card-header uk-text-center uk-">
+                    <h5 id="day1"></h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
+                    <img class="uk-align-center" id="iconDay1" src="" alt="weather icon">
+                    <p>Temp: <span id="day1Temp"></span></p>
+                    <p>Wind: <span id="day1Wind"></span></p>
+                    <p>Humidity: <span id="day1Humidity"></span></p>
                 </div>
             </div>
           </div>
@@ -111,52 +113,84 @@
 
           <div>
             <div id="other" class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day2"></h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
+                    <img class="uk-align-center" id="iconDay2" src="" alt="weather icon">
+                    <p>Temp: <span id="day2Temp"></span></p>
+                    <p>Wind: <span id="day2Wind"></span></p>
+                    <p>Humidity: <span id="day2Humidity"></span></p>
                 </div>
             </div>
           </div>
 
           <div>
             <div id="other" class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day3"></h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
+                    <img class="uk-align-center" id="iconDay3" src="" alt="weather icon">
+                    <p>Temp: <span id="day3Temp"></span></p>
+                    <p>Wind: <span id="day3wind"></span></p>
+                    <p>Humidity: <span id="day3Humidity"></span></p>
                 </div>
             </div>
           </div>
 
           <div>
             <div id="other" class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day4"></h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
+                    <img class="uk-align-center" id="iconDay4" src="" alt="weather icon">
+                    <p>Temp: <span id="day4Temp"></span></p>
+                    <p>Wind: <span id="day4Wind"></span></p>
+                    <p>Humidity: <span id="day4Humidity"></span></p>
                 </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day5"></h5>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <img class="uk-align-center" id="iconDay5" src="" alt="weather icon">
+                    <p>Temp: <span id="day5Temp"></span></p>
+                    <p>Wind: ,<span id="day5Wind"></span></p>
+                    <p>Humidity: <span id="day5Humidity"></span></p>
+                </div>    
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day6"></h5>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <img class="uk-align-center" id="iconDay6" src="" alt="weather icon">
+                    <p>Temp: <span id="day6Temp"></span></p>
+                    <p>Wind: ,<span id="day6Wind"></span></p>
+                    <p>Humidity: <span id="day6Humidity"></span></p>
+                </div>    
             </div>
           </div>
 
           <div>
             <div id="last" class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
+                <div class="uk-card-header uk-text-center">
+                    <h5 id="day7"></h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
+                    <img class="uk-align-center" id="iconDay7" src="" alt="weather icon">
+                    <p>Temp: <span id="day7Temp"></span></p>
+                    <p>Wind: ,<span id="day7Wind"></span></p>
+                    <p>Humidity: <span id="day7Humidity"></span></p>
                 </div>    
             </div>
           </div>

@@ -3,12 +3,12 @@ header h1 {
     padding-bottom: 0;
 }
 
-/* img {
-    visibility: visible !important;
-} */
+#day1 {
+    
+}
 
 #searchBox {
-    margin-left: 1em;
+    margin-left: 3em;
 }
 
 #currentDisplay {
