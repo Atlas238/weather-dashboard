@@ -1,4 +1,5 @@
 // DOM Nodes...
+// Main Display...
 var currentDateSpan = $("#currentDate");
 var currentCityNameDisplay = $("#cityNameDisplay");
 var currentCityTemp = $("#temp");
@@ -7,6 +8,7 @@ var currentCityHumidity = $("#humidity");
 var currentCityUV = $("#uv");
 var currentCityWeatherIcon = $("#weatherIcon");
 var weatherIconAdjustHolder = $("#weatherIconAdjust");
+// Daily Card display...
 var dailyDay1 = $("#day1");
 var dailyDay1Icon = $("#iconDay1");
 var dailyDay1Temp = $("#day1Temp");
@@ -43,11 +45,7 @@ var dailyDay7Temp = $("#day7Temp");
 var dailyDay7Wind = $("#day7Wind");
 var dailyDay7Humidity = $("#day7Humidity");
 
-// Grabbing visitor IP address...
-
-var userLoc;
-var windowWidth = window.matchMedia("(max-width:780px)");
-
+// Takes user location and populates page
 function getUserLocationInitial() {
   // If localstorage is empty, pulls from user's realtime location on pageload if the user accepts the location call
   // Asks for location and pulls current location then runs a fetch request at given lat long values

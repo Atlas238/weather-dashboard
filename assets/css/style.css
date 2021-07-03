@@ -4,7 +4,7 @@ header h1 {
 }
 
 #day1 {
-    
+
 }
 
 #searchBox {
@@ -118,12 +118,10 @@ form {
 
 #last {
     min-width: fit-content;
-    margin-left: 85%;
 }
 
 #other {
     min-width: fit-content;
-    margin-left:25%;
 }
 }
 
