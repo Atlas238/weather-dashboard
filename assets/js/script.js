@@ -244,6 +244,7 @@ submitBtn.on('click', function(event) {
     // Saving search query to local storage
     console.log($("#searchInput").val());
     var input = ($("#searchInput").val());
+    input.replace(" ", "");
     localStorage.setItem(x, input);
     x++;
     
