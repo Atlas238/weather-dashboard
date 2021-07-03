@@ -4,7 +4,6 @@ header h1 {
 }
 
 img {
-    width: 500px;
     visibility: visible !important;
 }
 
@@ -59,16 +58,55 @@ img {
     margin-left: 25%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width:2500px) {
+    #weatherIcon {
+        margin-right:0 !important;
+    }
+    
+   
+}
+
+@media screen and (max-width: 780px) {
+html {
+    width:100vw;
+}
+    #weatherIcon {
+        min-width:fit-content;
+    }
+
+    #weatherIcon::before {
+        content: "<br>";
+    }
 
 #mobile-media-query {
     display: flex;
     flex-direction: column;
 }
 
-#searchBox input {
-    margin-left:25px;
+form {
+    padding-right:65px;
 }
 
+#btn-search-history {
+    margin-left:35%;
+}
+
+#searchBox input {
+    margin-left:30%;
+}
+
+#city-focused {
+    width:100vw !important;
+}
+
+#last {
+    min-width: fit-content;
+    margin-left: 85%;
+}
+
+#other {
+    min-width: fit-content;
+    margin-left:25%;
+}
 }
 
