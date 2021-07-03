@@ -33,9 +33,9 @@
         uk-scrollspy="target: ; cls: uk-animation-slide-bottom; delay: 3200"
       >
         <div class="uk-margin">
-          <form class="uk-search uk-search-default">
+          <form id="searchForm" class="uk-search uk-search-default">
             <a id="btn" href="" class="uk-search-icon-flip" uk-search-icon></a>
-            <input id="searchInput" class="uk-search-input" type="search" placeholder="Search" />
+            <input id="searchInput" class="uk-search-input" type="text" placeholder="Search" />
           </form>
         </div>
         <button
@@ -133,7 +133,7 @@
                 <div class="uk-card-body uk-text-left">
                     <img class="uk-align-center" id="iconDay3" src="" alt="weather icon">
                     <p>Temp: <span id="day3Temp"></span></p>
-                    <p>Wind: <span id="day3wind"></span></p>
+                    <p>Wind: <span id="day3Wind"></span></p>
                     <p>Humidity: <span id="day3Humidity"></span></p>
                 </div>
             </div>

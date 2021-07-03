@@ -44,12 +44,13 @@ var dailyDay7Icon = $("#iconDay7");
 var dailyDay7Temp = $("#day7Temp");
 var dailyDay7Wind = $("#day7Wind");
 var dailyDay7Humidity = $("#day7Humidity");
+var submitBtn = $("#btn");
+var submitForm = $("#searchForm")
 
+// Local Storage input tracker
+let x = 0
 // Takes user location and populates page
 function getUserLocationInitial() {
-  // If localstorage is empty, pulls from user's realtime location on pageload if the user accepts the location call
-  // Asks for location and pulls current location then runs a fetch request at given lat long values
-  if (localStorage.length === 0) {
   navigator.geolocation.getCurrentPosition((position) => {
     fetch(
       "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=" +
@@ -229,12 +230,189 @@ function getUserLocationInitial() {
             dailyDay7Temp.text(responseData.daily[7].temp.day + " Fareinheit");
             dailyDay7Wind.text(responseData.daily[7].wind_speed + " mph");
             dailyDay7Humidity.text(responseData.daily[7].humidity);
-
           })
       );
   });
-  }
 }
 
 getUserLocationInitial();
 
+// Submit button on submit take user input value and query by city name 
+// submitBtn.on('click', function(event) {
+submitBtn.on('click', function(event) {
+    event.preventDefault();
+    // Saving search query to local storage
+    console.log($("#searchInput").val());
+    var input = ($("#searchInput").val());
+    localStorage.setItem(x, input);
+    x++;
+    
+    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + ($("#searchInput").val()) + "&appid=c11639f11059953c1817728af454e744")
+    .then((response) => response.json())
+    .then((searchResponseData) => {
+        var searchLatLon = [
+            searchResponseData.coord.lat,
+             searchResponseData.coord.lon
+            ];
+
+        currentCityNameDisplay.text(searchResponseData.name);
+        
+        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        .then((response) => response.json())
+        .then((citySearchedData) => {
+            console.log(citySearchedData);
+            // Printing search to Current City Display
+            var dateNow = new Date(citySearchedData.current.dt * 1000).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric"
+            });
+
+            currentCityNameDisplay.text()
+            console.log(dateNow);
+            currentDateSpan.text(dateNow);
+
+            currentCityTemp.text(citySearchedData.current.temp);
+
+            currentCityWind.text(citySearchedData.current.wind_speed);
+
+            currentCityHumidity.text(citySearchedData.current.humidity);
+
+            currentCityUV.text(citySearchedData.current.uvi);
+
+            currentCityWeatherIcon.attr(
+              "src",
+              "http://openweathermap.org/img/wn/" +
+                citySearchedData.current.weather[0].icon +
+                "@4x.png"
+            );
+
+            weatherIconAdjustHolder.attr(
+              "src",
+              "http://openweathermap.org/img/wn/" +
+                citySearchedData.current.weather[0].icon +
+                "@4x.png"
+            );
+            // Printing daily forecast for search
+            var dateDay1 = new Date((citySearchedData.daily[1].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay1.text(dateDay1);
+            dailyDay1Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[1].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay1Temp.text(citySearchedData.daily[1].temp.day + " Fareinheit");
+            dailyDay1Wind.text(citySearchedData.daily[1].wind_speed + "mph");
+            dailyDay1Humidity.text(citySearchedData.daily[1].humidity);
+            
+            var dateDay2 = new Date((citySearchedData.daily[2].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay2.text(dateDay2);
+            dailyDay2Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[2].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay2Temp.text(citySearchedData.daily[2].temp.day + " Fareinheit");
+            dailyDay2Wind.text(citySearchedData.daily[2].wind_speed + "mph");
+            dailyDay2Humidity.text(citySearchedData.daily[2].humidity);
+            
+            var dateDay3 = new Date((citySearchedData.daily[3].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay3.text(dateDay3);
+            dailyDay3Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[3].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay3Temp.text(citySearchedData.daily[3].temp.day + " Fareinheit");
+            dailyDay3Wind.text(citySearchedData.daily[3].wind_speed + "mph");
+            dailyDay3Humidity.text(citySearchedData.daily[3].humidity);
+            
+            var dateDay4 = new Date((citySearchedData.daily[4].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay4.text(dateDay4);
+            dailyDay4Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[4].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay4Temp.text(citySearchedData.daily[4].temp.day + " Fareinheit");
+            dailyDay4Wind.text(citySearchedData.daily[4].wind_speed + "mph");
+            dailyDay4Humidity.text(citySearchedData.daily[4].humidity);
+            
+            var dateDay5 = new Date((citySearchedData.daily[5].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay5.text(dateDay5);
+            dailyDay5Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[5].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay5Temp.text(citySearchedData.daily[5].temp.day + " Fareinheit");
+            dailyDay5Wind.text(citySearchedData.daily[5].wind_speed + "mph");
+            dailyDay5Humidity.text(citySearchedData.daily[5].humidity);
+            
+            var dateDay6 = new Date((citySearchedData.daily[6].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay6.text(dateDay6);
+            dailyDay6Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[6].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay6Temp.text(citySearchedData.daily[6].temp.day + " Fareinheit");
+            dailyDay6Wind.text(citySearchedData.daily[6].wind_speed + "mph");
+            dailyDay6Humidity.text(citySearchedData.daily[6].humidity);
+            
+            var dateDay7 = new Date((citySearchedData.daily[7].dt * 1000)).toLocaleDateString("en-gb",
+            {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            });
+            dailyDay7.text(dateDay7);
+            dailyDay7Icon.attr(
+                "src",
+                "http://openweathermap.org/img/wn/" +
+                  citySearchedData.daily[7].weather[0].icon +
+                  "@2x.png"
+            );
+            dailyDay7Temp.text(citySearchedData.daily[7].temp.day + " Fareinheit");
+            dailyDay7Wind.text(citySearchedData.daily[7].wind_speed + "mph");
+            dailyDay7Humidity.text(citySearchedData.daily[7].humidity);
+        })
+    })
+});
