@@ -67,20 +67,29 @@
       <!-- Weather Specifics and 5-Day forecast -->
       <div
         id="currentDisplay"
-        class="uk-section uk-width-expand"
+        class="uk-section uk-width-expand uk-flex uk-flex-center"
         uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 350"
       >
-        <div id="city-focused" class="uk-article">
+      <div id="city-focused" class=" uk-width-1-2 uk-flex uk-flex-center">
+          <div class="uk-flex uk-flex-column">
           <h1 id="cityNameDisplay" class="uk-article-title"></h1>
-          <p class="uk-article-meta">Temp:<span id="temp"></span></p>
-          <p class="uk-article-meta">Wind:<span id="wind"></span></p>
-          <p class="uk-article-meta">Humidity:<span id="humidity"></span></p>
-          <p class="uk-article-meta">UV Index:<span id="uv"></span></p>
+          <p class="uk-article-meta uk-text-large">Temp: <span id="temp"></span> Fareinheit</p>
+          <p class="uk-article-meta uk-text-large">Wind: <span id="wind"></span> mph</p>
+          <p class="uk-article-meta uk-text-large">Humidity: <span id="humidity"></span></p>
+          <p class="uk-article-meta uk-text-large">UV Index: <span id="uv"></span></p>
         </div>
+          <div class="uk-width-expand uk-flex-center">
+              <img class="uk-align-center uk-margin-top uk-padding-top" id = "weatherIcon" src=""/>
+          </div>
+        </div>
+    </div>
+</main>
+    <!-- Cards for Daily Forcast -->
 
-        <div
+    <div class="uk-flex uk-flex-center">
+    <div
           id="day-card"
-          class="uk-child-width-auto uk-text-center uk-flex"
+          class="uk-child-width-auto uk-text-center"
           uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
           uk-grid
           >
@@ -89,7 +98,20 @@
             <div class="uk-card uk-card-default  uk-card-hover">
                 <div class="uk-card-header uk-text-left">
                     <h5>Date</h5>
-                    <img src="" uk-svg>
+                </div>
+                <div class="uk-card-body uk-text-left">
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+          </div>
+        
+
+          <div>
+            <div class="uk-card uk-card-default  uk-card-hover">
+                <div class="uk-card-header uk-text-left">
+                    <h5>Date</h5>
                 </div>
                 <div class="uk-card-body uk-text-left">
                     <p>Temp: </p>
@@ -103,7 +125,6 @@
             <div class="uk-card uk-card-default  uk-card-hover">
                 <div class="uk-card-header uk-text-left">
                     <h5>Date</h5>
-                    <img src="" uk-svg>
                 </div>
                 <div class="uk-card-body uk-text-left">
                     <p>Temp: </p>
@@ -117,7 +138,6 @@
             <div class="uk-card uk-card-default  uk-card-hover">
                 <div class="uk-card-header uk-text-left">
                     <h5>Date</h5>
-                    <img src="" uk-svg>
                 </div>
                 <div class="uk-card-body uk-text-left">
                     <p>Temp: </p>
@@ -131,21 +151,6 @@
             <div class="uk-card uk-card-default  uk-card-hover">
                 <div class="uk-card-header uk-text-left">
                     <h5>Date</h5>
-                    <img src="" uk-svg>
-                </div>
-                <div class="uk-card-body uk-text-left">
-                    <p>Temp: </p>
-                    <p>Wind: </p>
-                    <p>Humidity: </p>
-                </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="uk-card uk-card-default  uk-card-hover">
-                <div class="uk-card-header uk-text-left">
-                    <h5>Date</h5>
-                    <img src="" uk-svg>
                 </div>
                 <div class="uk-card-body uk-text-left">
                     <p>Temp: </p>
@@ -155,9 +160,8 @@
             </div>
           </div>
         </div>
-      </div>
+      
 
-    </main>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>

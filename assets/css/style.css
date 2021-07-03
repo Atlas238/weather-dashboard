@@ -2,6 +2,12 @@ header h1 {
     margin-bottom: 0 !important;
     padding-bottom: 0;
 }
+
+img {
+    width: 500px;
+    visibility: visible !important;
+}
+
 #searchBox {
     margin-left: 1em;
 }
@@ -65,3 +71,4 @@ header h1 {
 }
 
 }
+
