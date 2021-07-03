@@ -120,7 +120,7 @@ function getUserLocationInitial() {
                   responseData.daily[1].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay1Temp.text(responseData.daily[1].temp.day + "Fareinheit");
+            dailyDay1Temp.text(responseData.daily[1].temp.day + " Fareinheit");
             dailyDay1Wind.text(responseData.daily[1].wind_speed + "mph");
             dailyDay1Humidity.text(responseData.daily[1].humidity);
 
@@ -139,8 +139,8 @@ function getUserLocationInitial() {
                   responseData.daily[2].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay2Temp.text(responseData.daily[2].temp.day + "Fareinheit");
-            dailyDay2Wind.text(responseData.daily[2].wind_speed + "mph");
+            dailyDay2Temp.text(responseData.daily[2].temp.day + " Fareinheit");
+            dailyDay2Wind.text(responseData.daily[2].wind_speed + " mph");
             dailyDay2Humidity.text(responseData.daily[2].humidity);
 
 
@@ -157,8 +157,8 @@ function getUserLocationInitial() {
                   responseData.daily[3].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay3Temp.text(responseData.daily[3].temp.day + "Fareinheit");
-            dailyDay3Wind.text(responseData.daily[3].wind_speed + "mph");
+            dailyDay3Temp.text(responseData.daily[3].temp.day + " Fareinheit");
+            dailyDay3Wind.text(responseData.daily[3].wind_speed + " mph");
             dailyDay3Humidity.text(responseData.daily[3].humidity);
 
 
@@ -175,8 +175,8 @@ function getUserLocationInitial() {
                   responseData.daily[4].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay4Temp.text(responseData.daily[4].temp.day + "Fareinheit");
-            dailyDay4Wind.text(responseData.daily[4].wind_speed + "mph");
+            dailyDay4Temp.text(responseData.daily[4].temp.day + " Fareinheit");
+            dailyDay4Wind.text(responseData.daily[4].wind_speed + " mph");
             dailyDay4Humidity.text(responseData.daily[4].humidity);
 
             var dateDay5 = new Date((responseData.daily[5].dt * 1000)).toLocaleDateString("en-gb",
@@ -192,8 +192,8 @@ function getUserLocationInitial() {
                   responseData.daily[5].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay5Temp.text(responseData.daily[5].temp.day + "Fareinheit");
-            dailyDay5Wind.text(responseData.daily[5].wind_speed + "mph");
+            dailyDay5Temp.text(responseData.daily[5].temp.day + " Fareinheit");
+            dailyDay5Wind.text(responseData.daily[5].wind_speed + " mph");
             dailyDay5Humidity.text(responseData.daily[5].humidity);
             
             var dateDay6 = new Date((responseData.daily[6].dt * 1000)).toLocaleDateString("en-gb",
@@ -209,8 +209,8 @@ function getUserLocationInitial() {
                   responseData.daily[6].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay6Temp.text(responseData.daily[6].temp.day + "Fareinheit");
-            dailyDay6Wind.text(responseData.daily[6].wind_speed + "mph");
+            dailyDay6Temp.text(responseData.daily[6].temp.day + " Fareinheit");
+            dailyDay6Wind.text(responseData.daily[6].wind_speed + " mph");
             dailyDay6Humidity.text(responseData.daily[6].humidity);
             
             var dateDay7 = new Date((responseData.daily[7].dt * 1000)).toLocaleDateString("en-gb",
@@ -226,8 +226,8 @@ function getUserLocationInitial() {
                   responseData.daily[7].weather[0].icon +
                   "@2x.png"
             );
-            dailyDay7Temp.text(responseData.daily[7].temp.day + "Fareinheit");
-            dailyDay7Wind.text(responseData.daily[7].wind_speed + "mph");
+            dailyDay7Temp.text(responseData.daily[7].temp.day + " Fareinheit");
+            dailyDay7Wind.text(responseData.daily[7].wind_speed + " mph");
             dailyDay7Humidity.text(responseData.daily[7].humidity);
 
           })
