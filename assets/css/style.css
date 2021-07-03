@@ -104,24 +104,8 @@ form {
     padding-right:65px;
 }
 
-#btn-search-history {
-    margin-left:35%;
-}
-
-#searchBox input {
-    margin-left:30%;
-}
-
 #city-focused {
     width:100vw !important;
-}
-
-#last {
-    min-width: fit-content;
-}
-
-#other {
-    min-width: fit-content;
 }
 }
 
