@@ -3,9 +3,6 @@ header h1 {
     padding-bottom: 0;
 }
 
-#day1 {
-
-}
 
 #searchBox {
     margin-left: 3em;
@@ -30,7 +27,7 @@ header h1 {
 }
 
 #day-card {
-    margin-left: 0 !important;
+    margin-left: 0;
 }
 
 #search-history-h3 {
@@ -74,15 +71,26 @@ header h1 {
 
 @media screen and (max-width: 780px) {
 
-#weatherIconAdjust {
-    display:inherit
-}
 html {
-    width:100vw !important;
-}
+        width:100vw !important;
+    }
 
 header {
-    text-align: center !important;
+        text-align: center !important;
+    }
+
+.cardWhole {
+    padding-left: 77px !important;
+    min-width: fit-content
+}
+
+#weatherIconAdjust {
+
+    display:inherit
+}
+
+#searchInput {
+    width: 302px;
 }
 
 #imgDiv {
