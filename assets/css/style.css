@@ -13,6 +13,10 @@ header h1 {
     margin-right: 0.5em;
 }
 
+#imgDiv {
+    min-width: fit-content;
+}
+
 #alert {
     margin-top: 0 !important;
 }
