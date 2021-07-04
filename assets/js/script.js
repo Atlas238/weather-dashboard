@@ -279,7 +279,7 @@ submitBtn.on('click', function(event) {
     genHistory();
 
     
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + ($("#searchInput").val()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + ($("#searchInput").val()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
@@ -289,7 +289,7 @@ submitBtn.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -454,11 +454,13 @@ submitBtn.on('click', function(event) {
             dailyDay7Humidity.text(citySearchedData.daily[7].humidity);
         })
     })
+
+
 });
 // Click listeners for the 5 history items that are stored...
 searchItem1.on('click', function(event) {
     event.preventDefault();
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + (searchItem1.text()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + (searchItem1.text()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
@@ -640,7 +642,7 @@ searchItem1.on('click', function(event) {
 
 searchItem2.on('click', function(event) {
     event.preventDefault();
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + (searchItem2.text()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + (searchItem2.text()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
@@ -822,7 +824,7 @@ searchItem2.on('click', function(event) {
 
 searchItem3.on('click', function(event) {
     event.preventDefault();
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + (searchItem3.text()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + (searchItem3.text()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
@@ -1004,7 +1006,7 @@ searchItem3.on('click', function(event) {
 
 searchItem4.on('click', function(event) {
     event.preventDefault();
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + (searchItem4.text()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + (searchItem4.text()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
@@ -1186,7 +1188,7 @@ searchItem4.on('click', function(event) {
 
 searchItem5.on('click', function(event) {
     event.preventDefault();
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + (searchItem5.text()) + "&appid=c11639f11059953c1817728af454e744")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + (searchItem5.text()) + "&appid=c11639f11059953c1817728af454e744")
     .then((response) => response.json())
     .then((searchResponseData) => {
         var searchLatLon = [
