@@ -116,14 +116,14 @@ function getUserLocationInitial() {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 responseData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 responseData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -139,7 +139,7 @@ function getUserLocationInitial() {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -159,7 +159,7 @@ function getUserLocationInitial() {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -178,7 +178,7 @@ function getUserLocationInitial() {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -197,7 +197,7 @@ function getUserLocationInitial() {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -215,7 +215,7 @@ function getUserLocationInitial() {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -233,7 +233,7 @@ function getUserLocationInitial() {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -251,7 +251,7 @@ function getUserLocationInitial() {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   responseData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -315,14 +315,14 @@ submitBtn.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -337,7 +337,7 @@ submitBtn.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -355,7 +355,7 @@ submitBtn.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -373,7 +373,7 @@ submitBtn.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -391,7 +391,7 @@ submitBtn.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -409,7 +409,7 @@ submitBtn.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -427,7 +427,7 @@ submitBtn.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -445,7 +445,7 @@ submitBtn.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -470,7 +470,7 @@ searchItem1.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -496,14 +496,14 @@ searchItem1.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -518,7 +518,7 @@ searchItem1.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -536,7 +536,7 @@ searchItem1.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -554,7 +554,7 @@ searchItem1.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -572,7 +572,7 @@ searchItem1.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -590,7 +590,7 @@ searchItem1.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -608,7 +608,7 @@ searchItem1.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -626,7 +626,7 @@ searchItem1.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -652,7 +652,7 @@ searchItem2.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -678,14 +678,14 @@ searchItem2.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -700,7 +700,7 @@ searchItem2.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -718,7 +718,7 @@ searchItem2.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -736,7 +736,7 @@ searchItem2.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -754,7 +754,7 @@ searchItem2.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -772,7 +772,7 @@ searchItem2.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -790,7 +790,7 @@ searchItem2.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -808,7 +808,7 @@ searchItem2.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -834,7 +834,7 @@ searchItem3.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -860,14 +860,14 @@ searchItem3.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -882,7 +882,7 @@ searchItem3.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -900,7 +900,7 @@ searchItem3.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -918,7 +918,7 @@ searchItem3.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -936,7 +936,7 @@ searchItem3.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -954,7 +954,7 @@ searchItem3.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -972,7 +972,7 @@ searchItem3.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -990,7 +990,7 @@ searchItem3.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -1016,7 +1016,7 @@ searchItem4.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -1042,14 +1042,14 @@ searchItem4.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -1064,7 +1064,7 @@ searchItem4.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -1082,7 +1082,7 @@ searchItem4.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -1100,7 +1100,7 @@ searchItem4.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -1118,7 +1118,7 @@ searchItem4.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -1136,7 +1136,7 @@ searchItem4.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -1154,7 +1154,7 @@ searchItem4.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -1172,7 +1172,7 @@ searchItem4.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
@@ -1198,7 +1198,7 @@ searchItem5.on('click', function(event) {
 
         currentCityNameDisplay.text(searchResponseData.name);
         
-        fetch("http://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
+        fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + searchLatLon[0] + "&lon=" + searchLatLon[1] + "&units=imperial&exclude=hourly,minutely&appid=c11639f11059953c1817728af454e744")
         .then((response) => response.json())
         .then((citySearchedData) => {
             console.log(citySearchedData);
@@ -1224,14 +1224,14 @@ searchItem5.on('click', function(event) {
 
             currentCityWeatherIcon.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
 
             weatherIconAdjustHolder.attr(
               "src",
-              "http://openweathermap.org/img/wn/" +
+              "https://openweathermap.org/img/wn/" +
                 citySearchedData.current.weather[0].icon +
                 "@4x.png"
             );
@@ -1246,7 +1246,7 @@ searchItem5.on('click', function(event) {
             dailyDay1.text(dateDay1);
             dailyDay1Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[1].weather[0].icon +
                   "@2x.png"
             );
@@ -1264,7 +1264,7 @@ searchItem5.on('click', function(event) {
             dailyDay2.text(dateDay2);
             dailyDay2Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[2].weather[0].icon +
                   "@2x.png"
             );
@@ -1282,7 +1282,7 @@ searchItem5.on('click', function(event) {
             dailyDay3.text(dateDay3);
             dailyDay3Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[3].weather[0].icon +
                   "@2x.png"
             );
@@ -1300,7 +1300,7 @@ searchItem5.on('click', function(event) {
             dailyDay4.text(dateDay4);
             dailyDay4Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[4].weather[0].icon +
                   "@2x.png"
             );
@@ -1318,7 +1318,7 @@ searchItem5.on('click', function(event) {
             dailyDay5.text(dateDay5);
             dailyDay5Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[5].weather[0].icon +
                   "@2x.png"
             );
@@ -1336,7 +1336,7 @@ searchItem5.on('click', function(event) {
             dailyDay6.text(dateDay6);
             dailyDay6Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[6].weather[0].icon +
                   "@2x.png"
             );
@@ -1354,7 +1354,7 @@ searchItem5.on('click', function(event) {
             dailyDay7.text(dateDay7);
             dailyDay7Icon.attr(
                 "src",
-                "http://openweathermap.org/img/wn/" +
+                "https://openweathermap.org/img/wn/" +
                   citySearchedData.daily[7].weather[0].icon +
                   "@2x.png"
             );
